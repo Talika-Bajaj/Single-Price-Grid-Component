@@ -1,5 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+:root {
+    
+/* Primary */
+
+--Cyan: hsl(179, 62%, 43%);
+--blue: #2BB3B1;
+--myblue: #4ABEBD;
+--Bright_Yellow: hsl(71, 73%, 54%);
+
+/* Neutral */
+
+--Light_Gray: hsl(204, 43%, 93%);
+--Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-color: var(--Light_Gray);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border: 2px solid red; */
+    width: 700px;
+    border-radius: 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.one, .two, .three {
+    padding: 40px;
+}
+
+.one {
+    background-color: #fff;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.one h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: var(--Cyan);
+}
+
+.one h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--Bright_Yellow);
+    /* font-size: 18px; */
+}
+
+.one p {
+    line-height: 1.6;
+    color: var(--Grayish_Blue);
+    font-weight: 700;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border: 2px solid blue; */
+}
+
+.two {
+    border-bottom-left-radius: 15px;
+    /* border: 2px solid green; */
+    /* border-bottom-left-radius: 15px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--Cyan);
+    /* color: white; */
+}
+
+.three {
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid orange; */
+    background-color: var(--myblue);
+}
+
+.head {
+    font-weight: 700;
+    font-size: 18px;
+    /* margin-bottom: 18px; */
+    color: var(--Light_Gray);
+}
+
+.para {
+    line-height: 1.5;
+    margin-top: -15px;
+}
+
+.para:nth-child(2) {
+    color: var(--Light_Gray);
+
+}
+
+.dollar {
+    display: flex;
+    align-items: center;
+    color: white;
+    /* margin-bottom: 12px; */
+}
+
+.month {
+    font-size: 14px;
+    color: var(--Light_Gray);
+}
+
+.rate {
+    font-weight: 700;
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: var(--Bright_Yellow);
+    padding: 15px 20px;
+    color: white;
+    font-weight: 700;
+    font-weight: 17px;
+    border: none;
+}
+
+
+ul li {
+    list-style-type: none;
+    color: var(--Light_Gray);
 }
