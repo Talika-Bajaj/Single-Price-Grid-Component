@@ -1,0 +1,20 @@
+@media screen and (max-width: 750px) {
+    .card {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        grid-template-columns: 100%;
+    }
+
+    .two {
+        border-bottom-left-radius: 0;
+    }
+    
+    .three {
+        border-bottom-left-radius: 15px;
+
+    }
+}
